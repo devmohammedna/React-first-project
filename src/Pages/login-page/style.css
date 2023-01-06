@@ -1,0 +1,45 @@
+.login-div {
+  display: flex;
+  padding: 80px;
+}
+
+.login-quat {
+  margin-top: 140px;
+}
+
+.login-quat span {
+  width: 180px;
+  height: 21px;
+  font-family: "Gayathri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  color: #bababa;
+}
+
+.login-quat p {
+  width: 473px;
+  height: 164px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #696f79;
+}
+
+.login-quat h4 {
+  width: 125px;
+  height: 38px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+  color: #696f79;
+  margin-top: 58px;
+}
+
+#bg2 {
+  margin-left: 146px;
+}

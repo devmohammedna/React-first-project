@@ -1,0 +1,33 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-left: 206px;
+  margin-top: 140px;
+}
+
+.login-form h3 {
+  width: 303px;
+  height: 51px;
+  font-weight: 700;
+  font-size: 42px;
+  color: #000000;
+}
+
+.login-form p {
+  width: 411px;
+  height: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #8692a6;
+  margin-left: 50px;
+}
+
+.icons-div {
+  display: flex;
+  gap: 16px;
+}

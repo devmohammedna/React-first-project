@@ -1,0 +1,10 @@
+.btn {
+  width: 426px;
+  height: 64px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}

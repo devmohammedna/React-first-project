@@ -1,0 +1,70 @@
+.reg-div {
+  display: flex;
+  height: 1024px;
+}
+
+.reg-left-div {
+  width: 642px;
+  height: 100%;
+  background-image: url(../../assets/bg1.png);
+}
+
+.bg-color {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #1565d8;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 233px;
+  padding: 82px;
+}
+
+#logo-1 {
+  width: 106px;
+  height: 57px;
+  margin-left: 7px;
+}
+
+.quate-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.quate-div span {
+  font-weight: 700;
+  font-size: 60px;
+  font-family: "Gayathri";
+  color: #00daf7;
+}
+
+.quate-div p {
+  width: 473px;
+  height: 164px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.quate-div h4 {
+  margin-top: 59px;
+}
+
+#corner {
+  height: 33px;
+  width: 33.5px;
+  margin-left: 384px;
+}
+
+.reg-right-div p {
+  color: #8692a6;
+  margin-left: 106px;
+  margin-top: 75px;
+}
+
+#google {
+  position: relative;
+  left: 206px;
+  bottom: 45px;
+}
