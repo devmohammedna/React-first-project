@@ -1,0 +1,9 @@
+.slider-div {
+  margin-top: 84px;
+  margin-left: 68px;
+  display: flex;
+  column-gap: 60px;
+  width: 1885px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}

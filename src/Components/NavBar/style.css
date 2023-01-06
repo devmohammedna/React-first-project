@@ -1,0 +1,33 @@
+.nav-div {
+  width: 122px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding-bottom: 76px;
+}
+
+.nav-div::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 948px;
+  left: 113px;
+  top: 89px;
+  background: #ffffff;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 38px;
+}
+
+#game-icon {
+  margin-top: 35px;
+}
+
+.nav-inner-div {
+  margin-top: 268px;
+}
+
+#switch {
+  margin-top: 400px;
+}

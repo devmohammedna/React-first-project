@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;600;700;800&display=swap");
+
+.card-div {
+  border-radius: 50px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  background-size: cover;
+  z-index: -1;
+}
+
+.card-div p {
+  z-index: 2;
+  font-family: "Khula", sans-serif;
+  width: 426px;
+  height: 62px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: right;
+  color: #ffffff;
+  margin-left: 130px;
+  margin-bottom: 7px;
+}

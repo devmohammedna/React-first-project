@@ -1,0 +1,5 @@
+.game-div {
+  display: grid;
+  grid-template-columns: 113px 1fr;
+  overflow-x: hidden;
+}

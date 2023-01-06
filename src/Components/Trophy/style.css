@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;600;700;800&display=swap");
+
+.trophy-div {
+  margin-top: 150px;
+}
+
+.trophy-div h3 {
+  width: 334px;
+  height: 36px;
+  font-family: "Khula", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 18px;
+  margin-left: 28px;
+}
+
+#trophy {
+  position: relative;
+  bottom: 340px;
+  left: 475px;
+}
