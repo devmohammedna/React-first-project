@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Button from "../../../Components/Button";
 import "./style.css";
 
@@ -39,17 +40,20 @@ export default class RegForm extends Component {
             Not bad but you know you can do it better
           </div>
           <label className="check-p">
-            {" "}
             <input type="checkbox" id="cheackbox" className="check" />
             <span>I agree to terms & conditions</span>
           </label>
-          <Button
-            name="Register Account"
-            bgcolor="#1565D8"
-            color="white"
-            type="submit"
-          />
-          <Button name="login" bgcolor="#FFF" color="black" />
+          <Link to={"/Games"}>
+            <Button
+              name="Register Account"
+              bgcolor="#1565D8"
+              color="white"
+              type="submit"
+            />
+          </Link>
+          <Link to={"/Login"}>
+            <Button name="login" bgcolor="#FFF" color="black" />
+          </Link>
         </form>
       </div>
     );
