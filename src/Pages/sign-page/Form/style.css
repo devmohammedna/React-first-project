@@ -87,3 +87,7 @@ label {
   top: 10px;
   right: 67px;
 }
+
+.error {
+  color: red;
+}
