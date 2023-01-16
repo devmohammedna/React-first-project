@@ -59,7 +59,9 @@ export default class Loginform extends Component {
         </Link>
         <label style={{ marginLeft: "98px" }}>
           Don’t have an account?
-          <span style={{ color: "#1565D8" }}>Register</span>
+          <Link to={"/"}>
+            <span style={{ color: "#1565D8" }}>Register</span>
+          </Link>
         </label>
       </form>
     );

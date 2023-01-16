@@ -6,6 +6,7 @@ import RegForm from "./Form";
 import logo from "../../assets/logo.png";
 import corner from "../../assets/corner.png";
 import google from "../../assets/google.png";
+import { Link } from "react-router-dom";
 
 export default class Register extends Component {
   render() {
@@ -27,7 +28,9 @@ export default class Register extends Component {
           </div>
         </div>
         <div className="reg-right-div">
-          <p> &#60; Back</p>
+          <Link to={"/Login"}>
+            <p> &#60; Back</p>
+          </Link>
           <RegForm />
           <img src={google} alt="google" id="google" />
         </div>
