@@ -6,12 +6,14 @@ import google from "../../../assets/google.png";
 import twitter from "../../../assets/twitter.png";
 import linkedin from "../../../assets/linkedin.png";
 import github from "../../../assets/github.png";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import axios from "axios";
 
 export default class Loginform extends Component {
   state = {
     email: "",
     password: "",
+    validUser: false,
   };
 
   handleChangeInput = (e) => {
@@ -19,10 +21,20 @@ export default class Loginform extends Component {
     this.setState({ [id]: value });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     if (this.state.email !== "" && this.state.password !== "") {
       console.log("Valid user");
+    }
+
+    try {
+      const lginUser = await axios.post(
+        "https://react-tt-api.onrender.com/api/users/login",
+        { email: this.state.email, password: this.state.password }
+      );
+      this.setState({ validUser: true });
+    } catch (e) {
+      console.log(e);
     }
   };
   render() {
@@ -40,7 +52,7 @@ export default class Loginform extends Component {
           Your email
         </label>
         <input
-          type="email"
+          type="text"
           id="email"
           placeholder="Write your email"
           value={this.state.email}
@@ -54,9 +66,8 @@ export default class Loginform extends Component {
           value={this.state.password}
           onChange={this.handleChangeInput}
         />
-        <Link to={"/Games"}>
-          <Button name="Login" color="white" bgcolor="#1565D8" type="submit" />
-        </Link>
+        <Button name="Login" color="white" bgcolor="#1565D8" type="submit" />
+        {this.state.validUser ? <Navigate to={"/Games"} /> : ""}
         <label style={{ marginLeft: "98px" }}>
           Don’t have an account?
           <Link to={"/"}>
